@@ -1,0 +1,28 @@
+.blanca
+    .blanca__banner
+        .blanca__banner_tabs(data-id="Contacto")
+            .blanca__banner_bck
+                picture
+                    source(srcset="images/banner_5@1x_mobile.png" media="(max-width: 767px) and (orientation: portrait)")
+                    source(srcset="images/banner_5@1x_mobile.png" media="(max-width: 767px) and (orientation: landscape)")
+                    source(srcset="images/banner_5@1x.png" media="(min-width: 768px) and (max-width: 1000px)")
+                    source(srcset="images/banner_5@2x.png" media="(min-width: 1001px) and (max-width: 1440px)")
+                    source(srcset="images/banner_5@2x.png" media="(min-width: 1441px)")
+                    img(src="images/banner_5@1x.png").picture
+            .blanca__banner_text
+
+    .blanca__nav
+        include ../extends/header
+  
+    .blanca__tab(data-id="Contacto")
+        .blanca__content
+            .blanca__tab_title Contacto
+            .blanca__tab_subtitle 
+            .blanca__tab_content
+                .box
+                    .box__text
+                        p #[span @]	#[a(href="mailto:bblancapinto@gmail.com") bblancapinto@gmail.com]
+                        p #[small c] #[a(href="tel:51980796397") 0051 9807-96397 ]
+                    .box__image 
+                        img(src="images/mapa.png", alt="")
+

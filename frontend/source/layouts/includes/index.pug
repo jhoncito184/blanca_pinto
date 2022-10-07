@@ -1,0 +1,26 @@
+.blanca
+    .blanca__banner
+        .blanca__banner_home
+            .blanca__banner_bck
+                picture
+                    source(srcset="images/banner_1@1x_mobile.png" media="(max-width: 767px) and (orientation: portrait)")
+                    source(srcset="images/banner_1@1x_mobile.png" media="(max-width: 767px) and (orientation: landscape)")
+                    source(srcset="images/banner_1@1x.png" media="(min-width: 768px) and (max-width: 1000px)")
+                    source(srcset="images/banner_1@2x.png" media="(min-width: 1001px) and (max-width: 1440px)")
+                    source(srcset="images/banner_1@2x.png" media="(min-width: 1441px)")
+                    img(src="images/banner_1@1x.png").picture
+            .blanca__banner_text
+                //- | Ser libre es un acto de permanente autobservación. #[br] La libertad no se crea, el ser humano es su propia libertad
+
+    .blanca__nav
+        include ../extends/header
+
+    .blanca__home
+        .blanca__content
+            .blanca__home_title
+                | Evolución Personal
+            .blanca__home_subtitle
+                | Permítete Ser, ámate a ti mismo
+            .blanca__home_text
+                p Bienvenida/ bienvenido a este espacio de
+                p Autoconocimiento y Autotransformación

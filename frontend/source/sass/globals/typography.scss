@@ -1,0 +1,71 @@
+// Font Path
+// --------------------------
+$font-path: 'fonts';
+$version: 1.0;
+
+@font-face {
+    font-family: 'Myriad-pro';
+    src:url("#{$font-path}/myriadpro-cond.otf?v=#{$version}");
+}
+
+@font-face {
+    font-family: 'Myriad-pro';
+    src:url("#{$font-path}/myriadpro-boldcond.eot?v=#{$version}");
+    src:url("#{$font-path}/myriadpro-boldcond.eot?v=#{$version}#iefix") format("embedded-opentype"),
+        url("#{$font-path}/myriadpro-boldcond.ttf?v=#{$version}") format("truetype"),
+        url("#{$font-path}/myriadpro-boldcond.woff?v=#{$version}") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad-pro';
+    src:url("#{$font-path}/myriadpro-cond.eot?v=#{$version}");
+    src:url("#{$font-path}/myriadpro-cond.eot?v=#{$version}#iefix") format("embedded-opentype"),
+        url("#{$font-path}/myriadpro-cond.ttf?v=#{$version}") format("truetype"),
+        url("#{$font-path}/myriadpro-cond.woff?v=#{$version}") format("woff");
+    font-weight: 300;
+    font-style: 300;
+}
+
+@font-face {
+    font-family: 'DIN-Condensed-Bold';
+    src:url("#{$font-path}/DIN-Condensed-Bold.eot?v=#{$version}");
+    src:url("#{$font-path}/DIN-Condensed-Bold.eot?v=#{$version}#iefix") format("embedded-opentype"),
+        url("#{$font-path}/DIN-Condensed-Bold.ttf?v=#{$version}") format("truetype"),
+        url("#{$font-path}/DIN-Condensed-Bold.woff?v=#{$version}") format("woff");    
+}
+
+@font-face {
+    font-family: 'OfficinaSans-Book';
+    src:url("#{$font-path}/OfficinaSans-Book.otf?v=#{$version}");
+}
+
+@font-face {
+    font-family: 'OfficinaSansStd-BookItalic';
+    src:url("#{$font-path}/OfficinaSansStd-BookItalic.otf?v=#{$version}");
+}
+
+@font-face {
+    font-family: 'ITC-Officina-Sans-Bold';
+    src:url("#{$font-path}/ITC-Officina-Sans-Bold.eot?v=#{$version}");
+    src:url("#{$font-path}/ITC-Officina-Sans-Bold.eot?v=#{$version}#iefix") format("embedded-opentype"),
+        url("#{$font-path}/ITC-Officina-Sans-Bold.ttf?v=#{$version}") format("truetype"),
+        url("#{$font-path}/ITC-Officina-Sans-Bold.woff?v=#{$version}") format("woff");    
+}
+
+@font-face {
+    font-family: 'ITC-Officina-Sans-BookItalic';
+    src:url("#{$font-path}/ITC-Officina-Sans-BookItalic.eot?v=#{$version}");
+    src:url("#{$font-path}/ITC-Officina-Sans-BookItalic.eot?v=#{$version}#iefix") format("embedded-opentype"),
+        url("#{$font-path}/ITC-Officina-Sans-BookItalic.ttf?v=#{$version}") format("truetype"),
+        url("#{$font-path}/ITC-Officina-Sans-BookItalic.woff?v=#{$version}") format("woff");    
+}
+
+@font-face {
+    font-family: 'Zapfino';
+    src:url("#{$font-path}/Zapfino.eot?v=#{$version}");
+    src:url("#{$font-path}/Zapfino.eot?v=#{$version}#iefix") format("embedded-opentype"),
+        url("#{$font-path}/Zapfino.ttf?v=#{$version}") format("truetype"),
+        url("#{$font-path}/Zapfino.woff?v=#{$version}") format("woff");    
+}

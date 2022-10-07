@@ -1,0 +1,30 @@
+.blanca
+    .blanca__banner
+        .blanca__banner_tabs(data-id="Paradigmas")
+            .blanca__banner_bck
+                picture
+                    source(srcset="images/banner_3@1x_mobile.png" media="(max-width: 767px) and (orientation: portrait)")
+                    source(srcset="images/banner_3@1x_mobile.png" media="(max-width: 767px) and (orientation: landscape)")
+                    source(srcset="images/banner_3@1x.png" media="(min-width: 768px) and (max-width: 1000px)")
+                    source(srcset="images/banner_3@2x.png" media="(min-width: 1001px) and (max-width: 1440px)")
+                    source(srcset="images/banner_3@2x.png" media="(min-width: 1441px)")
+                    img(src="images/banner_3@1x.png").picture
+            .blanca__banner_text
+                | La suma de todos nuestros actos decide lo que cada uno quiere ser. #[br] La vida nos pone el tablero nosotros movemos las fichas
+
+    .blanca__nav
+        include ../extends/header
+
+    .blanca__tab(data-id="Paradigmas")
+        .blanca__content
+            .blanca__tab_title Paradigmas
+            .blanca__tab_subtitle Estar despierto
+            .blanca__tab_slogan "Primero salir de lo que no eres, y luego entrar a lo que sí eres"
+            .blanca__tab_content
+                p Estar despierto es salir de un letargo, de una inercia, de un círculo vicioso. Es soltar o dejar ir aquello que nos inmoviliza. Es asumir una responsabilidad que estamos resistiendo. Es desmoronar viejas conexiones y ensamblar nuevas 
+                p Estar despierto es esclarecer los estados de la propia identidad abordando dos cosas. Por un lado, descubrir los propios términos; por otro lado, desmantelar los términos ajenos que uno ha tomado como propios.
+                p Afirmar nuestra propia existencia y representarnos a nosotros mismos ante los demás implica conocer los términos de nuestra propia existencia.
+
+                .message
+                    p(style="color:#ac6ca2") Más importante aún que ver, es lo que un ser humano 
+                    p(style="color:#ac6ca2") despierto hace con lo que ve"

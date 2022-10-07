@@ -1,0 +1,349 @@
+.blanca {
+    position: relative;
+    
+    &__banner {
+        position: relative;
+        width: 100%;
+        
+        &_home {
+            position: relative;
+        }
+
+        &_tabs {
+            position: relative;
+            // display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        &_text {
+            font-family: 'OfficinaSansStd-BookItalic';
+            text-align: right;
+            letter-spacing: 4px;
+            position: absolute;
+            right: 40px;
+            bottom: 90px;
+            font-size: 26px;
+            color: #FFF;
+
+            @media (max-width: 1024px) {
+                bottom: 50px;
+                font-size: 20px;
+            }
+
+            @include bp(baby) {
+                font-size: 14px;
+                bottom: 40px;
+                letter-spacing: 2px;
+                right: 0;
+                padding: 0 20px;
+            }
+        }
+    }
+
+    &__nav {
+        padding: 40px 20px;
+
+        @include bp(baby) {
+            padding: 0;
+        }
+    }
+    &__content {
+        position: relative;
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    &__home {
+        position: relative;
+        text-align: right;
+        padding: 200px 0;
+        z-index: -1;
+
+        @media (max-width: 1024px) {
+            padding: 100px 50px;
+        }
+
+        @include bp(baby) {
+            padding: 50px 20px;
+        }
+
+        &_title {
+            font-family: 'Zapfino';
+            color: #68236b;
+            font-size: 55px;
+            line-height: 100%;
+
+            @media (max-width: 1024px) {
+                font-size: 35px;
+            }
+
+            @include bp(baby) {
+                font-size: 20px;
+            }
+        }
+
+        &_subtitle {
+            font-family: 'Zapfino';
+            color: #b882a6;
+            font-size: 30px;
+            margin-bottom: 150px;
+
+            @media (max-width: 1024px) {
+                font-size: 22px;
+                margin-bottom: 80px;
+            }
+
+            @include bp(baby) {
+                font-size: 15px;
+            }
+        }
+
+        &_text {
+            font-family: 'DIN-Condensed-Bold';
+            letter-spacing: 5px;
+            font-size: 30px;
+            line-height: 40px;
+
+            @media (max-width: 1024px) {
+                font-size: 20px;
+            }
+
+            @include bp(baby) {
+                font-size: 12px;
+                line-height: 20px;
+            }
+
+            p {
+                color: #706f6f;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        
+    }
+
+    &__tab {
+        // display: none;
+        position: relative;
+        padding: 70px 0;
+        // z-index: -1;
+
+        @media (max-width: 1024px) {
+            padding: 50px 30px;
+        }
+
+        @include bp(baby) {
+            padding: 40px 20px;
+        }
+
+        &.active {
+            display: block;
+        }
+
+        &[data-id=Contacto] {
+            background: rgba(89, 155, 202, 0.4);
+            color: #FFF;
+
+            .blanca__content {
+                
+                .blanca__tab_title {
+                    color: #FFF;
+                }
+
+                .blanca__tab_content {
+                    a {
+                        color: #FFF;
+                        font-size: 24px;
+                    }
+
+                    p {
+                        font-family: 'OfficinaSans-Book';
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+
+        &_title {
+            font-family: 'DIN-Condensed-Bold';
+            letter-spacing: 5px;
+            font-size: 30px;
+            color: #b2b2b2;
+            margin-bottom: 25px;
+
+            @media (max-width: 1024px) {
+                font-size: 25px;
+            }
+
+            @include bp(baby) {
+                font-size: 20px;
+            }
+        }
+
+        &_subtitle {
+            font-family: 'Zapfino';
+            font-size: 25px;
+            color: #706f6f;
+            margin-bottom: 75px;
+
+            @media (max-width: 1024px) {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+
+            @include bp(baby) {
+                font-size: 13px;
+                line-height: 25px;
+                margin: 20px 0;
+            }
+        }
+
+        &_slogan {
+            font-family: 'Zapfino';
+            font-size: 18px;
+            color: #ac6ca2;
+            margin-bottom: 25px;
+            text-align: right;
+
+            @media (max-width: 1024px) {
+                font-size: 16px;
+            }
+
+            @include bp(baby) {
+                font-size: 13px;
+                line-height: 25px;
+                margin: 20px 0 30px;
+            }
+        }
+
+        &_content {
+            position: relative;
+            padding-left: 100px;
+
+            @include bp(baby) {
+                text-align: justify;
+                padding: 0;
+            }
+
+            span {
+                font-size: 60px;
+            }
+
+            small {
+                font-size: 24px;
+                padding-left: 30px;
+                padding-right: 10px;
+            }
+
+            p {
+                font-family: 'Myriad-pro';
+                margin: 30px 0;
+                font-size: 20px;
+                color: #575756;
+                text-align: justify;
+
+                @media (max-width: 1024px) {
+                    font-size: 18px;
+                }
+
+                @include bp(baby) {
+                    font-size: 14px;
+                    margin: 10px 0 20px;
+                }
+            }
+
+            .title {
+                font-family: 'Zapfino';
+                font-size: 25px;
+                line-height: 100%;
+                color: #706f6f;
+                padding: 50px 0 20px;
+
+                @media (max-width: 1024px) {
+                    font-size: 20px;
+                }
+
+                @include bp(baby) {
+                    font-size: 16px;
+                    padding: 30px 0 15px;
+                }
+            }
+
+            .message {
+                padding: 50px 0;
+
+                p {
+                    font-family: 'Zapfino';
+                    font-size: 18px;
+                    line-height: 180%;
+                    color: #ac6ca2;
+                    text-align: right;
+                    margin: 15px 0;
+
+                    @media (max-width: 1024px) {
+                        font-size: 16px;
+                        line-height: 150%;
+                    }
+
+                    @include bp(baby) {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .box {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                @include bp(baby) {
+                    display: block;
+                }
+
+                &__image {
+                    @include bp(baby) {
+                        margin: 20px 0;
+                    }
+                }
+            }
+
+            .posts {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 0;
+                font-family: 'DIN-Condensed-Bold';
+    
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: #000;
+                    font-weight: bold;
+
+                    svg {
+                        width: 15px;
+
+                        @include bp(baby) {
+                            width: 10px;
+                        }
+                    }
+
+                    .text {
+                        padding: 0 20px;
+                        letter-spacing: 3px;
+                        font-size: 20px;
+
+                        @include bp(baby) {
+                            padding: 0 10px;
+                            letter-spacing: 2px;
+                            font-size: 15px;
+                            max-width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
