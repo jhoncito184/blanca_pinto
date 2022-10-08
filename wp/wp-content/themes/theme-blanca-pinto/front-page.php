@@ -15,6 +15,11 @@
                                     <source srcset="<?php the_sub_field( 'home__banner_desktop' ); ?>" media="(min-width: 1441px)"><img class="picture" src="<?php the_sub_field( 'home__banner_desktop' ); ?>">
                                 </picture>
                             </div>
+                            <div class="blanca__banner_title">
+                                <?php while ( have_rows( 'home__banner_title' ) ) : the_row(); ?>
+                                    <p style="color: <?php the_sub_field( 'title_color' ); ?>"><?php the_sub_field( 'title_text' ); ?></p>
+                                <?php endwhile; ?>
+                            </div>
                             <div class="blanca__banner_text"></div>
                         <?php endwhile; ?>
                     </div>

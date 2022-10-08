@@ -18,6 +18,25 @@
             }
         }
 
+        &_title {
+            font-family: 'DIN-Condensed-Bold';
+            font-size: 45px;
+            letter-spacing: 7px;
+            position: absolute;
+            z-index: 1;
+            top: 46%;
+            left: 15%;
+            transform: translateY(-50%);
+
+            @include bp(baby) {
+                font-size: 28px;
+                left: 0;
+                right: 0;
+                transform: translateY(-50%);
+                text-align: center;
+            }
+        }
+
         &_text {
             font-family: 'OfficinaSansStd-BookItalic';
             text-align: right;

@@ -2751,6 +2751,22 @@ header {
       position: relative; }
       .blanca__banner_tabs.active {
         display: block; }
+    .blanca__banner_title {
+      font-family: 'DIN-Condensed-Bold';
+      font-size: 45px;
+      letter-spacing: 7px;
+      position: absolute;
+      z-index: 1;
+      top: 46%;
+      left: 15%;
+      transform: translateY(-50%); }
+      @media (max-width: 992px) {
+        .blanca__banner_title {
+          font-size: 28px;
+          left: 0;
+          right: 0;
+          transform: translateY(-50%);
+          text-align: center; } }
     .blanca__banner_text {
       font-family: 'OfficinaSansStd-BookItalic';
       text-align: right;
